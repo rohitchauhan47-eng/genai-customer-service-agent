@@ -1,0 +1,22 @@
+{
+  "note": "Made-up offer catalogue. 'lift' = how much the offer is expected to cut churn risk (percentage points). 'fit' = when the offer suits the customer.",
+  "goodwill_budget": {"premium": 40, "family": 40, "sim_only": 20},
+  "offers": [
+    {"id": "O1", "name": "Refund of the confirmed billing error", "say": "a refund of {cost} for the charge we got wrong", "kind": "must", "cost": "billing_error",
+     "rule": "Always given, for the exact amount, when a billing error is confirmed."},
+    {"id": "O2", "name": "Outage credit: one day of plan charge per day without service", "say": "a credit of {cost} for the days without service", "kind": "must", "cost": "outage",
+     "rule": "Always given when a network outage is confirmed."},
+    {"id": "O3", "name": "5GB roaming data bonus for the next trip (valid 60 days)", "say": "a 5GB roaming data bonus for your next trip", "kind": "extra", "cost": 4.00, "lift": 0.10,
+     "fit": {"roaming_trips": 3}, "rule": "Suits customers who roamed 3 or more times in the last year."},
+    {"id": "O4", "name": "Extra 10GB data a month for 3 months", "say": "an extra 10GB of data a month for the next 3 months", "kind": "extra", "cost": 6.00, "lift": 0.12,
+     "fit": {"overage_months": 2}, "rule": "Suits customers who went over their data allowance in 2 or more of the last 3 months."},
+    {"id": "O5", "name": "Unlimited data at the 30GB price for 6 months", "say": "unlimited data at your current price for 6 months", "kind": "extra", "cost": 60.00, "lift": 0.25,
+     "fit": {"overage_months": 2}, "rule": "Suits SIM-only customers who often run out of data."},
+    {"id": "O6", "name": "$10 goodwill bill credit", "say": "a {cost} credit on your next bill", "kind": "extra", "cost": 10.00, "lift": 0.05,
+     "fit": {}, "rule": "Suits anyone."},
+    {"id": "O7", "name": "Free streaming add-on for 3 months", "say": "3 months of free streaming", "kind": "extra", "cost": 9.00, "lift": 0.08,
+     "fit": {"segment": "family"}, "rule": "Suits family plans."},
+    {"id": "O8", "name": "Loyalty reward: 10% off the plan for 12 months", "say": "10% off your plan for the next 12 months", "kind": "extra", "cost": "loyalty", "lift": 0.15,
+     "fit": {"tenure_years": 5}, "rule": "Suits customers with 5 or more years' tenure."}
+  ]
+}

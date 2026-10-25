@@ -1,0 +1,50 @@
+{
+  "note": "All customers, cases and numbers are made up for this demo. Churn risk would come from the AI Churn Prediction Agent; here it is a fixed sample value.",
+  "cases": [
+    {
+      "case": "CS-1042-001",
+      "customer": "1042",
+      "summary": "Bill was $87 instead of the usual $62. The Europe Roaming Pack ($25) was charged twice.",
+      "from": "GenAI Customer Service Agent",
+      "facts": [
+        {"id": "F1", "text": "Segment: Premium postpaid, Premium Postpaid 50GB plan", "key": "segment", "value": "premium"},
+        {"id": "F2", "text": "Average monthly spend (ARPU): $62.00", "key": "arpu", "value": 62.00},
+        {"id": "F3", "text": "Customer for 6 years", "key": "tenure_years", "value": 6},
+        {"id": "F4", "text": "Roaming trips in the last 12 months: 5 (all Europe)", "key": "roaming_trips", "value": 5},
+        {"id": "F5", "text": "Data use: about 38GB of 50GB a month, no overage in the last 3 months", "key": "overage_months", "value": 0},
+        {"id": "F6", "text": "Churn risk: 35% (from the AI Churn Prediction Agent)", "key": "churn_risk", "value": 0.35},
+        {"id": "F7", "text": "Billing team confirmed a $25.00 double charge (Jira BILL-311)", "key": "billing_error", "value": 25.00}
+      ]
+    },
+    {
+      "case": "CS-3311-002",
+      "customer": "3311",
+      "summary": "Unhappy about a $36.80 bill: welcome discount ended and $15 out-of-bundle data. Charges are correct.",
+      "from": "GenAI Customer Service Agent",
+      "facts": [
+        {"id": "F1", "text": "Segment: SIM only, SIM Only 30GB plan", "key": "segment", "value": "sim_only"},
+        {"id": "F2", "text": "Average monthly spend (ARPU): $21.80", "key": "arpu", "value": 21.80},
+        {"id": "F3", "text": "Customer for 8 months", "key": "tenure_years", "value": 0.7},
+        {"id": "F4", "text": "Roaming trips in the last 12 months: 0", "key": "roaming_trips", "value": 0},
+        {"id": "F5", "text": "Went over the data allowance in 2 of the last 3 months", "key": "overage_months", "value": 2},
+        {"id": "F6", "text": "Churn risk: 55% (from the AI Churn Prediction Agent)", "key": "churn_risk", "value": 0.55},
+        {"id": "F7", "text": "Billing check: all charges correct, no billing error", "key": "billing_error", "value": 0}
+      ]
+    },
+    {
+      "case": "CS-5120-001",
+      "customer": "5120",
+      "summary": "Family of 4 lost mobile data at home for 3 days during a local network outage.",
+      "from": "GenAI Customer Service Agent",
+      "facts": [
+        {"id": "F1", "text": "Segment: Family plan, 4 lines", "key": "segment", "value": "family"},
+        {"id": "F2", "text": "Average monthly spend (ARPU): $95.00", "key": "arpu", "value": 95.00},
+        {"id": "F3", "text": "Customer for 3 years", "key": "tenure_years", "value": 3},
+        {"id": "F4", "text": "Roaming trips in the last 12 months: 0", "key": "roaming_trips", "value": 0},
+        {"id": "F5", "text": "Went over the data allowance in 2 of the last 3 months", "key": "overage_months", "value": 2},
+        {"id": "F6", "text": "Churn risk: 40% (from the AI Churn Prediction Agent)", "key": "churn_risk", "value": 0.40},
+        {"id": "F7", "text": "Network team confirmed a 3-day outage at the customer's home area", "key": "outage_days", "value": 3}
+      ]
+    }
+  ]
+}
