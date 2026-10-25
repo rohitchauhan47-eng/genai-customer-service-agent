@@ -1,0 +1,85 @@
+{
+  "note": "All customers, numbers and amounts are made up for this demo.",
+  "customers": [
+    {
+      "id": "1042",
+      "name": "Customer 1042",
+      "segment": "Premium postpaid",
+      "plan": "Premium Postpaid 50GB ($55.00 a month + $7.00 taxes and fees)",
+      "story": "Bill is $87, usually $62",
+      "payments": [
+        {"id": "PAY1", "date": "28 Sep 2026", "item": "Europe Roaming Pack 7 days", "amount": 25.00, "method": "Card on website"}
+      ],
+      "bills": {
+        "previous": {
+          "period": "September 2026",
+          "lines": [
+            {"id": "P1", "item": "Premium Postpaid 50GB monthly charge", "amount": 55.00, "tariff": "T1"},
+            {"id": "P2", "item": "Taxes and fees", "amount": 7.00, "tariff": "T1"}
+          ]
+        },
+        "current": {
+          "period": "October 2026",
+          "lines": [
+            {"id": "B1", "item": "Premium Postpaid 50GB monthly charge", "amount": 55.00, "tariff": "T1"},
+            {"id": "B2", "item": "Taxes and fees", "amount": 7.00, "tariff": "T1"},
+            {"id": "B3", "item": "Europe Roaming Pack 7 days, activated 28 Sep", "amount": 25.00, "tariff": "T4"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "2087",
+      "name": "Customer 2087",
+      "segment": "SIM only",
+      "plan": "SIM Only Unlimited ($30.00 a month)",
+      "story": "Holiday in the USA plus a data top-up",
+      "payments": [],
+      "bills": {
+        "previous": {
+          "period": "September 2026",
+          "lines": [
+            {"id": "P1", "item": "SIM Only Unlimited monthly charge", "amount": 30.00, "tariff": "T1"},
+            {"id": "P2", "item": "Annual price change", "amount": 2.40, "tariff": "T2"}
+          ]
+        },
+        "current": {
+          "period": "October 2026",
+          "lines": [
+            {"id": "B1", "item": "SIM Only Unlimited monthly charge", "amount": 30.00, "tariff": "T1"},
+            {"id": "B2", "item": "Annual price change", "amount": 2.40, "tariff": "T2"},
+            {"id": "B3", "item": "World Pass roaming, USA, 7 days used (3-9 Oct)", "amount": 42.00, "tariff": "T4"},
+            {"id": "B4", "item": "Extra 10GB one-off add-on, bought in app on 5 Oct", "amount": 8.00, "tariff": "T7"},
+            {"id": "B5", "item": "Call to 09 premium rate number, 6 min ($0.55 access + $1.50/min service)", "amount": 12.30, "tariff": "T6"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "3311",
+      "name": "Customer 3311",
+      "segment": "SIM only",
+      "plan": "SIM Only 30GB ($20.00 a month)",
+      "story": "Welcome discount ended and data ran out",
+      "payments": [],
+      "bills": {
+        "previous": {
+          "period": "September 2026",
+          "lines": [
+            {"id": "P1", "item": "SIM Only 30GB monthly charge", "amount": 20.00, "tariff": "T1"},
+            {"id": "P2", "item": "Annual price change", "amount": 1.80, "tariff": "T2"},
+            {"id": "P3", "item": "Welcome discount, 50% off plan (month 6 of 6)", "amount": -10.00, "tariff": "T8"}
+          ]
+        },
+        "current": {
+          "period": "October 2026",
+          "lines": [
+            {"id": "B1", "item": "SIM Only 30GB monthly charge", "amount": 20.00, "tariff": "T1"},
+            {"id": "B2", "item": "Annual price change", "amount": 1.80, "tariff": "T2"},
+            {"id": "B3", "item": "Out-of-bundle data, 4.2GB used over allowance (5 x 1GB blocks)", "amount": 15.00, "tariff": "T3"}
+          ]
+        }
+      }
+    }
+  ]
+}

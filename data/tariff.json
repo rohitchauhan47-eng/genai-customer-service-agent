@@ -1,0 +1,66 @@
+{
+  "name": "TelcoDemo Mobile Price Guide (made-up, for demo only)",
+  "effective_from": "2026-04-01",
+  "sections": [
+    {
+      "id": "T1",
+      "title": "Monthly plan charge",
+      "text": "Your monthly plan charge is billed one month in advance on your bill date. Premium Postpaid 50GB costs $55.00 a month plus $7.00 taxes and fees. SIM Only 30GB costs $20.00 a month. SIM Only Unlimited costs $30.00 a month."
+    },
+    {
+      "id": "T2",
+      "title": "Annual price change",
+      "text": "Every April your monthly plan charge goes up by a fixed amount: $1.80 a month for plans under $25, and $2.40 a month for plans of $25 or more. The rise is shown as a separate line called 'Annual price change' on every bill from April onwards."
+    },
+    {
+      "id": "T3",
+      "title": "Data allowance and out-of-bundle data",
+      "text": "If you use all of your monthly data allowance, extra data is charged at $3.00 per 1GB block, rounded up to the next full GB. Out-of-bundle data stops at a $15.00 limit each month unless you have removed your spend cap. Unused data does not roll over."
+    },
+    {
+      "id": "T4",
+      "title": "Roaming",
+      "text": "Europe Zone 1: Europe Roaming Pack, $25.00 for 7 days with your normal allowances. Zone 2 (USA, Canada, Australia, India, UAE): World Pass, $6.00 per day you use your phone, including your normal allowances. Zone 3 (rest of world): pay as you go, calls $1.50 per minute, data $7.50 per MB. You are only charged on days you make a call, send a text or use data abroad."
+    },
+    {
+      "id": "T5",
+      "title": "Calls to international numbers from home",
+      "text": "Calls from home to international numbers are not in your plan allowance. Zone A (Europe, USA, Canada): $0.45 per minute. Zone B (India, Pakistan, Philippines, Nigeria and the rest of the world): $1.25 per minute. The International Saver add-on gives 200 minutes to Zone A and B countries for $5.00 a month."
+    },
+    {
+      "id": "T6",
+      "title": "Premium rate and service numbers",
+      "text": "Calls to 09 premium rate numbers cost a $0.55 per minute access charge plus the service charge set by the organisation you called (up to $3.60 per minute). These numbers are never included in your allowance."
+    },
+    {
+      "id": "T7",
+      "title": "Add-ons and bolt-ons",
+      "text": "Add-ons bought in the app or by text are charged in full on your next bill. Recurring add-ons continue every month until you cancel them. One-off add-ons (such as Extra 10GB for $8.00) are charged once."
+    },
+    {
+      "id": "T8",
+      "title": "Promotional discounts",
+      "text": "Promotional discounts are applied for the length shown in your welcome email (usually 6 months). When the discount ends, your plan goes back to its full monthly charge from the next bill. We send a text reminder 30 days before a discount ends."
+    },
+    {
+      "id": "T9",
+      "title": "Spend cap",
+      "text": "You can set a monthly spend cap from $0 to $100 in the app for charges outside your plan, such as out-of-bundle data, international calls, premium numbers and roaming. Once you reach the cap, those services stop until your next bill date. Plan charges and add-ons are not counted towards the cap."
+    },
+    {
+      "id": "T10",
+      "title": "Billing period and part-month charges",
+      "text": "Usage charges (calls, texts, data, roaming) are billed in arrears for the previous billing period. If you change plan in the middle of a month, you pay a part-month charge for each plan for the days you had it."
+    },
+    {
+      "id": "T11",
+      "title": "Disputing a charge",
+      "text": "If you think a charge is wrong, tell us within 60 days of the bill date. We will hold that amount while we check it and reply within 10 working days. If we agree it is wrong, we refund it on your next bill."
+    },
+    {
+      "id": "T12",
+      "title": "Packs paid by card",
+      "text": "Roaming packs and add-ons bought on the website by card are paid at the time of purchase. They must not appear again on your monthly bill. If one does, it is a double charge and will be refunded."
+    }
+  ]
+}
