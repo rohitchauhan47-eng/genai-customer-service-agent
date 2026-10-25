@@ -23,7 +23,7 @@ TARIFF = json.loads((DATA / "tariff.json").read_text(encoding="utf-8"))
 CUSTOMERS = json.loads((DATA / "bills.json").read_text(encoding="utf-8"))["customers"]
 SECTIONS = {s["id"]: s for s in TARIFF["sections"]}
 
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "openai/gpt-oss-120b"  # llama-3.3-70b-versatile was retired by Groq on 16 Aug 2026
 GEMINI_MODEL = "gemini-2.5-flash"
 
 INTENTS = {
@@ -191,6 +191,18 @@ def ask_gemini(key, system, history, prompt):
     return r.json()["candidates"][0]["content"]["parts"][0]["text"]
 
 
+def error_text(e):
+    """Short reason for the caption, e.g. 'HTTP 401: Invalid API Key'. Never includes the key."""
+    resp = getattr(e, "response", None)
+    if resp is None:
+        return type(e).__name__
+    try:
+        detail = resp.json().get("error", {}).get("message", "")
+    except Exception:
+        detail = ""
+    return f"HTTP {resp.status_code}: {detail[:120]}" if detail else f"HTTP {resp.status_code}"
+
+
 def best_sentence(section, item):
     """The price guide sentence that shares the most words with the bill line."""
     # Numbers (dates, minutes) are left out: they match the wrong sentences too easily.
@@ -257,7 +269,7 @@ def respond(customer, question, history=(), groq_key=None, gemini_key=None):
                 result.update(answer=fn(key, system, list(history)[-6:], prompt), engine=name)
                 return result
             except Exception as e:  # rate limit, network, bad key: fall through to the next option
-                last_error = f"{name} unavailable ({type(e).__name__})"
+                last_error = f"{name} unavailable ({error_text(e)})"
     result.update(answer=built_in_answer(customer, diff),
                   engine=f"Built-in explainer ({last_error or 'no AI key set'})")
     return result

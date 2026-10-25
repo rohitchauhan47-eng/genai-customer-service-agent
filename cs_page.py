@@ -88,7 +88,7 @@ st.markdown("""
 1. **Understand**: a router works out what the customer needs: bill issue, recharge, internet/WiFi, or other.
 2. **Check the facts in code**: for a bill issue, plain Python compares this bill with last month's and with card payments already made, so every number is exact and double charges are caught.
 3. **Retrieve (RAG)**: it pulls the price guide sections linked to each changed line, plus any that match the question (BM25 keyword search).
-4. **Generate**: a free LLM (Llama 3.3 70B on Groq, or Gemini Flash) writes a plain-English answer **from those sources only**, citing each one.
+4. **Generate**: a free LLM (GPT-OSS 120B on Groq, or Gemini Flash) writes a plain-English answer **from those sources only**, citing each one.
 5. **Act**: if something is wrong, it logs a complaint ticket and hands the case to the **Master AI Agent** (simulated).
 6. **Guardrails**: low temperature, "answer only from sources" rules, and a built-in no-AI explainer if the AI is unavailable, so the demo always works.
 

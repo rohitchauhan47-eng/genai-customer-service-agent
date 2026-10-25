@@ -14,7 +14,7 @@ A chat agent for a mobile operator. It works out what the customer needs (bill i
 1. A keyword router picks the use case.
 2. For a bill issue, `agent.py` compares this bill with last month's and with card payments in plain Python (exact numbers, double-charge check).
 3. It retrieves the matching price guide sections (RAG, BM25 keyword search).
-4. A free LLM (Groq Llama 3.3 70B, or Gemini Flash) writes the answer from those sources only. With no key, a built-in explainer answers instead.
+4. A free LLM (Groq GPT-OSS 120B, or Gemini Flash) writes the answer from those sources only. With no key, a built-in explainer answers instead.
 5. A double charge logs a complaint ticket and hands it to the Master AI Agent (simulated).
 
 ## Files

@@ -14,7 +14,7 @@ import json
 import re
 from pathlib import Path
 
-from agent import GEMINI_MODEL, GROQ_MODEL, ask_gemini, ask_groq, money
+from agent import GEMINI_MODEL, GROQ_MODEL, ask_gemini, ask_groq, error_text, money
 
 DATA = Path(__file__).parent / "data"
 CASES = json.loads((DATA / "cases.json").read_text(encoding="utf-8"))["cases"]
@@ -132,7 +132,7 @@ def recommend(case, groq_key=None, gemini_key=None):
             return {"plan": pl, "pick": pick, "reason": out["reason"], "message": out["message"],
                     "engine": name, "prompt": prompt}
         except Exception as e:
-            last_error = f"{name} unavailable ({type(e).__name__})"
+            last_error = f"{name} unavailable ({error_text(e)})"
     reason, message = built_in(case, pl, best)
     return {"plan": pl, "pick": best, "reason": reason, "message": message,
             "engine": f"Built-in rules ({last_error or 'no AI key set'})", "prompt": prompt}
