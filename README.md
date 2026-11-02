@@ -1,10 +1,11 @@
-# Telco AI Agents: GenAI Customer Service + AI Hyper-personalisation
+# Telco AI Agents: GenAI Customer Service, AI Hyper-personalisation, Telco AI Research
 
-Two connected demo agents for a mobile operator (all data made up):
+Three demo agents for a mobile operator (customer data is made up; research notes come from published reports):
 - **GenAI Customer Service Agent** (`cs_page.py`, `agent.py`): chat that answers customer queries from their records, bill issues first.
 - **AI Hyper-personalisation Agent** (`hp_page.py`, `personalise.py`): takes a case from the first agent, picks the right remedy (what is owed + one offer worth more than it costs), the LLM explains it and drafts the message, and a supervisor approves it (human in the loop).
+- **Telco AI Research Agent** (`research_page.py`, `research.py`): answers questions about AI in telecom only from shared industry reports, citing report and page. The library (`data/reports.json`) holds short fact notes in our own words with page numbers, not the full reports. Add a report by adding its notes there.
 
-`app.py` holds the page menu. Data: `data/bills.json`, `data/tariff.json`, `data/cases.json`, `data/offers.json`.
+`app.py` holds the page menu. Data: `data/bills.json`, `data/tariff.json`, `data/cases.json`, `data/offers.json`, `data/reports.json`.
 
 ## GenAI Customer Service Agent
 
