@@ -1,0 +1,330 @@
+{
+  "_about": "Short fact notes taken from industry reports, written in our own words with the page they come from. The full reports are not stored here. To add a report: add it under 'reports', then add its facts with the next free F number.",
+  "reports": {
+    "R1": {
+      "title": "AI Agent Trends 2026: Telecommunications",
+      "publisher": "Google Cloud",
+      "year": 2026,
+      "survey": "Survey figures come from Google Cloud's 'The ROI of AI in telecommunications 2025' (489 telco executives; 274 whose company uses agentic AI)."
+    }
+  },
+  "facts": [
+    {
+      "id": "F1",
+      "report": "R1",
+      "page": 3,
+      "topic": "What agentic AI is",
+      "text": "Agentic AI goes beyond answering questions: it understands a goal, makes a plan and takes actions across applications to reach it, with human guidance and oversight. The report calls this the decisive shift for telcos right now.",
+      "tags": "definition meaning"
+    },
+    {
+      "id": "F2",
+      "report": "R1",
+      "page": 4,
+      "topic": "The five trends",
+      "text": "The report names five AI agent trends for telcos in 2026: agents for every employee, agents for every workflow, agents for customers, agents for security, and agents for scale (upskilling people).",
+      "tags": "trends overview summary"
+    },
+    {
+      "id": "F3",
+      "report": "R1",
+      "page": 6,
+      "topic": "Adoption: agents in production",
+      "text": "56% of telecom executives at companies using generative AI say they have AI agents in production.",
+      "tags": "adoption how many percent production use"
+    },
+    {
+      "id": "F4",
+      "report": "R1",
+      "page": 6,
+      "topic": "Top uses: network",
+      "text": "Among telcos using agentic AI, 39% use agents for network or equipment configuration and automation, 34% for network remediation (fixing faults), and 32% have deployed network agents.",
+      "tags": "adoption where most use cases percent popular network"
+    },
+    {
+      "id": "F5",
+      "report": "R1",
+      "page": 7,
+      "topic": "Employees become orchestrators",
+      "text": "Google Cloud's telecom head says every telco employee moves from task executor to strategic orchestrator, using specialised agent systems so people can focus on the problems that matter.",
+      "tags": "jobs role people"
+    },
+    {
+      "id": "F6",
+      "report": "R1",
+      "page": 8,
+      "topic": "Human supervisor of agents",
+      "text": "In the new working model every employee, from field technician to network engineer, supervises agents: they delegate repetitive tasks, set goals, guide strategy with human judgement, and verify quality as the final checkpoint.",
+      "tags": "human in the loop oversight role jobs"
+    },
+    {
+      "id": "F7",
+      "report": "R1",
+      "page": 8,
+      "topic": "Grounding",
+      "text": "Grounding means anchoring an AI model's answers to a verifiable set of facts, its 'ground truth'. For a company, that ground truth is its own data: internal systems, knowledge bases, customer data and past work.",
+      "tags": "trust accuracy hallucination data"
+    },
+    {
+      "id": "F8",
+      "report": "R1",
+      "page": 9,
+      "topic": "Network operations specialist",
+      "text": "A network operations specialist who used to spend time on ticket routing and reactive troubleshooting can instead orchestrate specialised agents and focus on designing self-healing systems that fix outages before customers notice.",
+      "tags": "network operations noc"
+    },
+    {
+      "id": "F9",
+      "report": "R1",
+      "page": 10,
+      "topic": "Network agent system: four agents",
+      "text": "The report describes a network operations agent system with four agents: a forecasting agent (predicts capacity demand and defects), an anomaly detection agent (spots unusual network behaviour and groups alarms with the same cause), a root cause analysis agent (finds the most likely cause), and a remediation agent (fixes it automatically or opens a ticket for a person, for example in ServiceNow, Remedy or JIRA).",
+      "tags": "network operations noc fault outage self healing"
+    },
+    {
+      "id": "F10",
+      "report": "R1",
+      "page": 10,
+      "topic": "Helper agents",
+      "text": "Specialised agents can call shared helper agents, for example ones that turn plain language into SQL queries or automation scripts, or that call AI/ML models."
+    },
+    {
+      "id": "F11",
+      "report": "R1",
+      "page": 11,
+      "topic": "TELUS productivity",
+      "text": "TELUS's Chief AI Officer says more than 57,000 TELUS team members regularly use AI and save about 40 minutes per AI interaction.",
+      "tags": "results case study productivity time saved"
+    },
+    {
+      "id": "F12",
+      "report": "R1",
+      "page": 13,
+      "topic": "Agentic system: digital assembly line",
+      "text": "An agentic system is described as a digital assembly line: a human-guided, multi-step workflow that orchestrates several agents to run complex business processes 24/7.",
+      "tags": "multi agent orchestration workflow"
+    },
+    {
+      "id": "F13",
+      "report": "R1",
+      "page": 13,
+      "topic": "Adoption: more than 10 agents",
+      "text": "43% of telecom executives say their company has launched more than 10 AI agents.",
+      "tags": "adoption how many percent scale"
+    },
+    {
+      "id": "F14",
+      "report": "R1",
+      "page": 13,
+      "topic": "Joining up silos",
+      "text": "The biggest value is linking siloed teams such as network operations, field service and contact centres: agents could fix a network fault, open a field service ticket and tell the contact centre to inform customers of a technician visit, all in one sequence.",
+      "tags": "network operations field service contact centre workflow"
+    },
+    {
+      "id": "F15",
+      "report": "R1",
+      "page": 14,
+      "topic": "A2A and MCP protocols",
+      "text": "The Agent2Agent (A2A) protocol is an open standard that lets agents from different builders and frameworks work together. The Model Context Protocol (MCP) gives AI models a standard way to connect to live data and tools, since a model's own knowledge is frozen at training time.",
+      "tags": "multi agent orchestration protocol standard"
+    },
+    {
+      "id": "F16",
+      "report": "R1",
+      "page": 15,
+      "topic": "Vodafone",
+      "text": "Vodafone is using Google Cloud to build a shared agentic architecture and A2A workflow to improve investment planning, customer experience and operational efficiency.",
+      "tags": "case study example"
+    },
+    {
+      "id": "F17",
+      "report": "R1",
+      "page": 16,
+      "topic": "Agent payments and audit trail",
+      "text": "For autonomous networks, an agent making a configuration change can use the Agent Payments Protocol (AP2) to prove it is authorised and within a set budget, leaving an audit trail for every decision.",
+      "tags": "network governance budget"
+    },
+    {
+      "id": "F18",
+      "report": "R1",
+      "page": 17,
+      "topic": "Intent-based network example",
+      "text": "Example: an engineer tells a network agent to keep 'Gold Tier' latency in downtown Toronto during a big hockey game within a $5,000 budget. The agent checks costs with a finance agent and buys extra capacity only when it is worth it.",
+      "tags": "network operations intent"
+    },
+    {
+      "id": "F19",
+      "report": "R1",
+      "page": 17,
+      "topic": "Deutsche Telekom",
+      "text": "Deutsche Telekom uses a network AI agent to analyse network behaviour, detect performance issues and take corrective action, improving reliability, cutting operating costs and improving customer experience.",
+      "tags": "results case study example network"
+    },
+    {
+      "id": "F20",
+      "report": "R1",
+      "page": 19,
+      "topic": "From chatbots to concierge agents",
+      "text": "Old customer service chatbots answered simple questions and deflected tickets but could not handle nuanced problems. Without a view of the network they could not tell a neighbourhood outage from a faulty home router. In 2026, concierge-style agents remember preferences and past conversations to give one-to-one service.",
+      "tags": "chatbot customer service concierge difference"
+    },
+    {
+      "id": "F21",
+      "report": "R1",
+      "page": 19,
+      "topic": "Adoption: customer service",
+      "text": "45% of executives at telcos with AI agents in production say they use agents for customer service and experience.",
+      "tags": "adoption where most use cases percent popular customer"
+    },
+    {
+      "id": "F22",
+      "report": "R1",
+      "page": 19,
+      "topic": "Contact centre value",
+      "text": "When AI handles diagnostics and groundwork, contact centre staff can turn each interaction into a deeper relationship, driving loyalty and customer lifetime value.",
+      "tags": "customer service loyalty"
+    },
+    {
+      "id": "F23",
+      "report": "R1",
+      "page": 20,
+      "topic": "Personalisation at scale",
+      "text": "Customers should not have to prove who they are or re-explain their problem. A concierge agent works because it is grounded in the customer data the company chooses to share, such as CRM purchase history.",
+      "tags": "customer service personalization personalisation data"
+    },
+    {
+      "id": "F24",
+      "report": "R1",
+      "page": 20,
+      "topic": "Slow internet example",
+      "text": "Example of a concierge agent for slow internet: instead of asking for a 12-digit user ID, it greets the customer by name, says the network is healthy but they are hitting their bandwidth cap, and offers to upgrade the plan right in the chat or pass them to a person.",
+      "tags": "customer service internet wifi broadband upgrade"
+    },
+    {
+      "id": "F25",
+      "report": "R1",
+      "page": 20,
+      "topic": "Verizon",
+      "text": "Verizon added Gemini-powered AI to customer service and reports a 40% increase in sales and a 95% answer rate for customer questions.",
+      "tags": "results case study sales customer service"
+    },
+    {
+      "id": "F26",
+      "report": "R1",
+      "page": 21,
+      "topic": "Proactive help",
+      "text": "A concierge agent does not wait for a complaint: it watches systems for triggers and resolves problems with real-time data, with human guidance and oversight."
+    },
+    {
+      "id": "F27",
+      "report": "R1",
+      "page": 22,
+      "topic": "Roaming concierge example",
+      "text": "Roaming example: when a customer lands in Japan, the agent confirms it on the network, sees they are a high data user, and texts that their standard roaming pass will run out in about 2 hours, offering an unlimited data pass for $5 a day.",
+      "tags": "customer service personalisation offer"
+    },
+    {
+      "id": "F28",
+      "report": "R1",
+      "page": 22,
+      "topic": "Smart handoff to people",
+      "text": "For complex or emotionally charged issues the agent makes a smart handoff to a person, passing a full summary so staff can step in.",
+      "tags": "customer service human handoff escalation"
+    },
+    {
+      "id": "F29",
+      "report": "R1",
+      "page": 22,
+      "topic": "Bell Canada",
+      "text": "Bell Canada offers AI agents and Agent Assist (live suggestions and sentiment analysis for human agents) in its contact centre solutions. AI has contributed $20 million in savings across customer operations.",
+      "tags": "results case study savings cost customer service"
+    },
+    {
+      "id": "F30",
+      "report": "R1",
+      "page": 24,
+      "topic": "Security alert fatigue",
+      "text": "82% of security analysts worry they may miss real threats because of alert fatigue (Forrester, 2025). AI agents can reason, act and adjust across network infrastructure under an analyst's guidance.",
+      "tags": "security soc"
+    },
+    {
+      "id": "F31",
+      "report": "R1",
+      "page": 24,
+      "topic": "Adoption: security",
+      "text": "47% of executives at telcos with AI agents in production say they use agents for security operations and cybersecurity.",
+      "tags": "adoption where most use cases percent popular security cybersecurity"
+    },
+    {
+      "id": "F32",
+      "report": "R1",
+      "page": 26,
+      "topic": "Agentic security operations",
+      "text": "An agentic security operations centre runs several task-based agents that share security data and keep evaluating, acting and re-evaluating, freeing analysts for higher-value work.",
+      "tags": "security soc multi agent"
+    },
+    {
+      "id": "F33",
+      "report": "R1",
+      "page": 27,
+      "topic": "One New Zealand",
+      "text": "One New Zealand used Google Security Operations to defend against attacks in real time and reports a 48% cut in operating cost.",
+      "tags": "results case study savings cost security"
+    },
+    {
+      "id": "F34",
+      "report": "R1",
+      "page": 28,
+      "topic": "Security analyst's new role",
+      "text": "With agents doing the alert-watching, analysts move to threat hunting, supervising agents and their rules of engagement, and designing better long-term defences.",
+      "tags": "security role jobs"
+    },
+    {
+      "id": "F35",
+      "report": "R1",
+      "page": 30,
+      "topic": "Skills gap",
+      "text": "The half-life of a professional skill is now about four years, and as short as two years in tech (Forbes, 2024). The report says the main limit on growth in 2026 is how fast people learn to use agents, not the technology.",
+      "tags": "skills people training jobs"
+    },
+    {
+      "id": "F36",
+      "report": "R1",
+      "page": 31,
+      "topic": "Learning and revenue",
+      "text": "82% of decision-makers say technical learning resources help them stay ahead in AI, and 71% of organisations saw revenue rise after using learning resources (Google/Ipsos, 2024)."
+    },
+    {
+      "id": "F37",
+      "report": "R1",
+      "page": 33,
+      "topic": "Five pillars of AI learning",
+      "text": "The report's five pillars for an AI-ready workforce: set measurable goals, secure sponsorship, sustain momentum and reward innovation, build AI into daily work (hackathons, field days), and train for security risks.",
+      "tags": "skills training people adoption plan"
+    },
+    {
+      "id": "F38",
+      "report": "R1",
+      "page": 34,
+      "topic": "Sponsorship roles",
+      "text": "A good AI programme starts with three roles: an executive sponsor (funding and backing), a groundswell lead (builds excitement and collects ideas) and an AI accelerator (the technical expert who turns ideas into tools such as autonomous network healing and agentic customer support).",
+      "tags": "skills people programme start strategy"
+    },
+    {
+      "id": "F39",
+      "report": "R1",
+      "page": 36,
+      "topic": "TELUS training results",
+      "text": "TELUS reports that 96% of team members gained confidence using AI tools after training, and 96% committed to using them in their work.",
+      "tags": "results case study training"
+    },
+    {
+      "id": "F40",
+      "report": "R1",
+      "page": 38,
+      "topic": "The 2026 opportunity",
+      "text": "Telcos that experiment now build the in-house expertise to manage, govern and scale agentic AI. The value is freeing teams for creative, strategic and empathetic work, with a responsibility to keep outcomes secure, ethical and fair.",
+      "tags": "strategy future opportunity"
+    }
+  ]
+}

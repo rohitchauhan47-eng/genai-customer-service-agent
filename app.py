@@ -8,5 +8,6 @@ st.markdown(CSS, unsafe_allow_html=True)
 page = st.navigation([
     st.Page("cs_page.py", title="GenAI Customer Service Agent", icon="💬", url_path="customer-service", default=True),
     st.Page("hp_page.py", title="AI Hyper-personalisation Agent", icon="🎯", url_path="hyper-personalisation"),
+    st.Page("research_page.py", title="Telco AI Research Agent", icon="📚", url_path="research"),
 ])
 page.run()
